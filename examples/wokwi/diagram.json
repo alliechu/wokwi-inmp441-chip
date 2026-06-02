@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "Allie Chung",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": -4.76,
+      "attrs": { "builder": "esp-idf" }
+    },
+    { "type": "chip-inmp441", "id": "chip1", "top": -56.58, "left": 72, "attrs": { "signal": "1" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "chip1:DATA", "esp:22", "limegreen", [ "h0" ] ],
+    [ "chip1:BCK", "esp:26", "limegreen", [ "v0" ] ],
+    [ "chip1:VCC", "esp:3V3", "red", [ "h-65.2", "v80.22" ] ],
+    [ "chip1:L/R", "esp:GND.3", "blue", [ "h-53.79", "v137.82" ] ],
+    [ "chip1:GND", "esp:GND.1", "black", [ "v13.02", "h-74.95" ] ],
+    [ "chip1:WS", "esp:25", "yellow", [ "h-218.99", "v144" ] ]
+  ],
+  "dependencies": {}
+}

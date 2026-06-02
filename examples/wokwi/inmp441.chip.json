@@ -1,0 +1,25 @@
+{
+  "name": "inmp441",
+  "author": "Allie Chung",
+  "pins": [
+    "VCC",
+    "GND",
+    "DATA",
+    "BCK",
+    "WS",
+    "L/R"
+  ],
+  "controls": [
+    {
+      "id": "signal",
+      "label": "Signal Type",
+      "type": "select",
+      "default": "0",
+      "items": [
+        { "value": "0", "label": "Sine (440 Hz)" },
+        { "value": "1", "label": "Square (440 Hz)" },
+        { "value": "2", "label": "White Noise" }
+      ]
+    }
+  ]
+}
