@@ -93,13 +93,7 @@ void app_main(void) {
       printf("  [%lu] %ld\n", (unsigned long)(total_samples - samples_this_read + i),
              (long)buffer[i]);
     }
-  /*
-    if (bytes_read > 0) {
-      for (int i = 0; i < bytes_read / 4; i++) {
-        printf("%ld\n", (long)buffer[i]);
-      }
-    }
-  */
+  
     fflush(stdout);
     vTaskDelay(pdMS_TO_TICKS(500));
   }
