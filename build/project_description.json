@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "inmp441-reader",
-    "project_version":    "8eb9e5d-dirty",
+    "project_version":    "ed5b026-dirty",
     "project_path":       "C:/Users/ajchu/Documents/research/wokwi-inmp441-chip",
     "idf_path":           "C:/esp/v5.2.7/esp-idf",
     "build_dir":          "C:/Users/ajchu/Documents/research/wokwi-inmp441-chip/build",

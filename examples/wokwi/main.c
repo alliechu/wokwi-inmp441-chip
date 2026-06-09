@@ -88,7 +88,6 @@ void app_main(void) {
     printf("read err: %d, bytes_read: %u\n", err, (unsigned)bytes_read, (unsigned long)samples_this_read,
            (unsigned long)total_samples);
 
-
     for (int i = 0; i < (int)samples_this_read; i++) {
       printf("  [%lu] %ld\n", (unsigned long)(total_samples - samples_this_read + i),
              (long)buffer[i]);
